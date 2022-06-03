@@ -87,6 +87,20 @@ header h1{
 }
 
 #rules-table{
-    background-color: aqua;
     width: 300px;
+}
+
+button{
+    background-color: #FFFFFF;
+    color:black;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: #e1ae25;
+    color: #FFFFFF;
 }
