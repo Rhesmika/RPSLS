@@ -99,12 +99,16 @@ button{
     padding: 10px 20px 10px 20px;
     border-radius: 25px;
     margin: 20px;
+    text-decoration: none;
 }
 
 button:hover{
     background-color: #e1ae25;
     color: #FFFFFF;
 }
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
 footer{
     height:80px;
