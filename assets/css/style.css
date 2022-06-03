@@ -62,8 +62,8 @@ header h1{
 #rules-diagram {
     width:400px;
     height: 500px;
-    padding: 50px;
-    padding-left: 100px;
+    padding-left: 60px;
+    padding-top: 60px;
     display: inline-block;
     float: left;
 
@@ -72,11 +72,11 @@ header h1{
 #rules-diagram img{
     width: 400px;
     height:auto;
-
 }
 
 .how-to-play{
     display: inline-block;
+    float: right;
     padding-right: 50px;
     padding-left: 50px;
     text-align: center;
@@ -194,4 +194,14 @@ footer{
 
 #game-outcome button:hover {
     filter: brightness(70%);
+}
+
+
+/* media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1300px) {
+
+.game-rules-area{
+    width: 80%;
 }
