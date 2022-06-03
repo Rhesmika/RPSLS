@@ -114,11 +114,78 @@ footer{
     height:80px;
     width: 100%;
     background-color: #78a8da;
-
 }
 
 .reserves{
     text-align: center;
     color: #FFFFFF;
     padding-top: 30px;
+}
+
+
+
+ 
+.game-area{
+    background-color: #ffda67;
+    border-radius: 25px;
+    width: 70%;
+    height: 500px;
+    max-height: 500px;
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.game-area img{
+    width:80px;
+    margin-top:20px;
+}
+
+.game-buttons{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.game-buttons button{
+    background-color: transparent;
+    font-size: 20px;
+    padding-right: 0px;
+}
+.game-buttons button:hover{
+    filter: drop-shadow(0 0 1rem #e1ae25);
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#game-outcome{
+    width: 70%;
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#see-rules{
+    background-color: #78a8da;
+    color: #FFFFFF;
+    float:right;
+}
+
+#start-again{
+    background-color: #78a8da;
+    color: #FFFFFF;
+    float: right;
+}
+
+#game-lost-count{
+    display: inline-block;
+    float:left;
+    width: 300px;
+}
+
+#game-outcome button:hover {
+    filter: brightness(70%);
 }
