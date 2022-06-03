@@ -48,14 +48,14 @@ header h1{
 .game-rules-area{
     background-color: #ffda67;
     border-radius: 25px;
-    width: 80%;
+    width: 70%;
     height: 500px;
     max-height: 500px;
     max-width:1200px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    
+    margin-bottom: 80px;
     
 }
 
@@ -79,6 +79,7 @@ header h1{
     display: inline-block;
     padding-right: 50px;
     padding-left: 50px;
+    text-align: center;
 }
 
 .how-to-play h2{
@@ -103,4 +104,17 @@ button{
 button:hover{
     background-color: #e1ae25;
     color: #FFFFFF;
+}
+
+footer{
+    height:80px;
+    width: 100%;
+    background-color: #78a8da;
+
+}
+
+.reserves{
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 30px;
 }
