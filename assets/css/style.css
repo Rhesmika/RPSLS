@@ -9,9 +9,13 @@
 body{
     font-family: 'Patrick Hand', cursive;
     background-color: #FFFFFF;
+    color: black;
 }
 h1{
     font-size: 40px;
+}
+h2{
+    font-size: 35px;
 }
 p{
     font-size: 20px;
@@ -34,7 +38,6 @@ header h1{
     color: black;
     
 }
-    
 #logo{
     height: 50px;
     display: inline-block;
@@ -42,3 +45,48 @@ header h1{
     padding-right: 15px;
 }
 
+.game-rules-area{
+    background-color: #ffda67;
+    border-radius: 25px;
+    width: 80%;
+    height: 500px;
+    max-height: 500px;
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+    
+}
+
+#rules-diagram {
+    width:400px;
+    height: 500px;
+    padding: 50px;
+    padding-left: 100px;
+    display: inline-block;
+    float: left;
+
+}
+
+#rules-diagram img{
+    width: 400px;
+    height:auto;
+
+}
+
+.how-to-play{
+    display: inline-block;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.how-to-play h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#rules-table{
+    background-color: aqua;
+    width: 300px;
+}
