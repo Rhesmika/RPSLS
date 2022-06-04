@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.getAttribute("data-type") === "play-again"){
             runGame();
         } else {
-            let handType = this.getAttribute("datatype");
+            let handType = this.getAttribute("data-type");
             alert (`You picked ${handType}`);
             console.log("hand type")
         }
