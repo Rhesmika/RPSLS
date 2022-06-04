@@ -263,7 +263,10 @@ footer{
 
 /* For medium screens size from 975px wide and down */
 @media screen and (max-width: 975px) {
- 
+
+    h2{
+        font-size: 25px;;
+    }
  .game-buttons{
      padding-top: 50px;
      height: 300px;
@@ -277,18 +280,13 @@ footer{
     height:200px;
     padding-top: 20px;
  }
+ #game-outcome button{
+     width: 100px;
+     font-size: 20px;
+
+ }
+ #game-lost-count{
+     padding-left: 0px;
 }
 
-
-/* For medium screens size from 820px wide and down */
-@media screen and (max-width: 820px){
-    h1{
-        font-size: 30px;
-        margin-top: 5px;
-    }
-    .game-area{
-        width: 90%;
-    }
-
- 
 }
