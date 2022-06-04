@@ -6,25 +6,43 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "play-again"){
+            resetScore();
             runGame();
         } else {
             let handType = this.getAttribute("data-type");
             alert (`You picked ${handType}`);
-            console.log("hand type")
+            console.log("user:" , handType);
         }
+        runGame();
         })
+        
     }
 })
+
+
+/**
+ * Set hand type for computer randomly
+ */
 function runGame(){
-    console.log("run Game");
+
+    let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
+    let random = Math.floor(Math.random()*handTypes.length);
+    let handTypeComputer = handTypes[random];
+    console.log("computer:" , handTypeComputer);
+    calculateWinner();
 }
 
-function checkAnswer(){}
+function calculateWinner(){
+    
 
-function calculateWinner(){}
+}
 
 function displayMessage(){}
 
 function incrementGamesLostCount(){}
 
 function displayGamesLostCount(){}
+
+function resetScore(){
+
+}
