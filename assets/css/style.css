@@ -19,7 +19,7 @@ h2{
     text-align: center;
 }
 h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 p{
     font-size: 20px;
@@ -147,8 +147,10 @@ footer{
 .game-buttons{
     height: 300px;
     width: 90%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    padding-top: 50px;
 }
 .select{
     height: 300px;
@@ -157,7 +159,6 @@ footer{
     vertical-align: top;
 }
 .select-button{
-    height: 200px;
     width: auto;
     margin: 0;
     margin-top: 30px;
@@ -166,6 +167,10 @@ footer{
 
 .select-button img{
     height: 150px;
+}
+
+.select button:hover{
+    background-color: #FFFFFF;
 }
 
 #game-outcome{
@@ -193,6 +198,9 @@ footer{
     width: 300px;
     padding-top: 20px;
     padding-left: 20px;
+}
+#game-lost-count h2{
+    text-align: left;
 }
 
 #game-outcome button:hover {
@@ -248,11 +256,39 @@ footer{
         width: 200px;
     }
 
-
-    .game-area{
-        height: 800px;
-    }
     #game-buttons{
         padding-top: 10px;
     }
+}
+
+/* For medium screens size from 975px wide and down */
+@media screen and (max-width: 975px) {
+ 
+ .game-buttons{
+     padding-top: 50px;
+     height: 300px;
+     width:100%;
+ }
+ .select-button{
+     margin-top: 0px;
+ }
+ .select{
+    width:100px;
+    height:200px;
+    padding-top: 20px;
+ }
+}
+
+
+/* For medium screens size from 820px wide and down */
+@media screen and (max-width: 820px){
+    h1{
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .game-area{
+        width: 90%;
+    }
+
+ 
 }
