@@ -189,17 +189,20 @@ footer{
     margin-right: auto;
 }
 
+td{
+    padding-right: 20px;
+}
+
 #games-lost{
-    height:200px;
+    height:75px;
     margin-left: auto;
     margin-right: auto;
     float:left;
-    padding-top: 20px;
     padding-left: 20px;
 }
 
 #games-lost h2{
-    text-align: left;
+    text-align: center;
 }
 
 

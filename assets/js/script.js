@@ -174,11 +174,16 @@ function checkSpock(handTypeComputer){
 }
 
 
-
+/**
+ * Displays the reponse message of who won
+*/
 function displayMessage(msg){
     document.getElementById("msg").textContent = msg;
 }
 
+/**
+ * Increase games lost score
+ */
 function incrementGamesLostCount(){
     let score = document.getElementById("game-lost-count").innerText;
     let newScore = ++score;
@@ -189,8 +194,9 @@ function incrementGamesLostCount(){
     }
 }
 
-function displayGamesLostCount(){}
-
+/**
+ * Resets Score to 0
+*/
 function resetScore(newScore){
     alert("you're dead");
     newScore = 0;
