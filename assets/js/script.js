@@ -49,35 +49,122 @@ function runGame(handType){
 }
 
 
-
+/**
+ * Calculates if user wins when they play rock
+ */
 function checkRock(handTypeComputer){
      
-
     if (handTypeComputer === "rock"){
         let msg = "Both players chose rock...  try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "paper"){
-        let msg = "Paper covers Rock..  you loose"
+        let msg = "Paper COVERS Rock..  you loose"
         displayMessage(msg);
         incrementGamesLostCount();
     }else if (handTypeComputer === "scissors"){
-        let msg = "Rock crushes Scissors! You win!"
+        let msg = "Rock CRUSHES Scissors! You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "lizard"){
-        let msg = "Rock crushes Lizard! You win!"
+        let msg = "Rock CRUSHES Lizard! You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "spock"){
-        let msg = "Spock vaporises Rock... you loose"
+        let msg = "Spock VAPORISES Rock... you loose"
         displayMessage(msg);
         incrementGamesLostCount();
+    }
 }
+
+/**
+ * Calculates if user wins when they play paper
+ */
+function checkPaper(){
+        if (handTypeComputer === "rock"){
+        let msg = "Paper covers Rock!  You win!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "paper"){
+        let msg = "Both players chose paper...  try again!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "scissors"){
+        let msg = "Scissors CUTS Paper... you lose"
+        displayMessage(msg);
+        incrementGamesLostCount();
+    }else if (handTypeComputer === "lizard"){
+        let msg = "Lizard EATS Paper... you lose"
+        displayMessage(msg);
+        incrementGamesLostCount();
+    }else if (handTypeComputer === "spock"){
+        let msg = "Paper DISPROVES Spock! You win!"
+        displayMessage(msg);
+    }
+}
+
+/**
+ * Calculates if user wins when they play scissors
+ */
+function checkScissors(){
+    if (handTypeComputer === "rock"){
+        let msg = "Rock CRUSHES Scissors... you lose"
+        displayMessage(msg);
+        incrementGamesLostCount();
+    }else if (handTypeComputer === "paper"){
+        let msg = "Scissors CUTS Paper! You win!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "scissors"){
+        let msg = "Both players chose Scissors...  try again!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "lizard"){
+        let msg = "Scissors DECAPITATES Lizard! You win!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "spock"){
+        let msg = "Spock SMASHES Scissors... you lose"
+        displayMessage(msg);
+        incrementGamesLostCount();
+    }
 }
 
 
-function checkPaper(){}
-function checkScissors(){}
-function checkLizard(){}
-function checkSpock(){}
+function checkLizard(){
+    if (handTypeComputer === "rock"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "paper"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "scissors"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "lizard"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "spock"){
+        let msg = ""
+        displayMessage(msg);
+    }
+    incrementGamesLostCount();
+
+
+}
+function checkSpock(){
+    if (handTypeComputer === "rock"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "paper"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "scissors"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "lizard"){
+        let msg = ""
+        displayMessage(msg);
+    }else if (handTypeComputer === "spock"){
+        let msg = ""
+        displayMessage(msg);
+    }
+    incrementGamesLostCount();
+
+
+}
 
 
 
