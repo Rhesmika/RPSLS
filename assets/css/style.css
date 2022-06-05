@@ -189,6 +189,11 @@ footer{
     margin-right: auto;
 }
 
+#game-outcome button{
+    margin: 5px;
+
+}
+
 td{
     padding-right: 20px;
 }
@@ -204,7 +209,6 @@ td{
 #games-lost h2{
     text-align: center;
 }
-
 
 #see-rules{
     background-color: #78a8da;

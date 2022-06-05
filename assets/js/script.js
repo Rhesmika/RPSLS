@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "play-again"){
-            resetScore();
+            resetScores();
+            resetWonScore();
             runGame();
         } else {
             let handType = this.getAttribute("data-type");
@@ -67,9 +68,11 @@ function checkRock(handTypeComputer){
     }else if (handTypeComputer === "scissors"){
         let msg = "Rock CRUSHES Scissors! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "lizard"){
         let msg = "Rock CRUSHES Lizard! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "spock"){
         let msg = "Spock VAPORISES Rock... you loose"
         displayMessage(msg);
@@ -84,6 +87,7 @@ function checkPaper(handTypeComputer){
         if (handTypeComputer === "rock"){
         let msg = "Paper COVERS Rock!  You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "paper"){
         let msg = "Both players chose paper...  try again!"
         displayMessage(msg);
@@ -98,6 +102,7 @@ function checkPaper(handTypeComputer){
     }else if (handTypeComputer === "spock"){
         let msg = "Paper DISPROVES Spock! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }
 }
 
@@ -112,12 +117,14 @@ function checkScissors(handTypeComputer){
     }else if (handTypeComputer === "paper"){
         let msg = "Scissors CUTS Paper! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "scissors"){
         let msg = "Both players chose Scissors...  try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "lizard"){
         let msg = "Scissors DECAPITATES Lizard! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "spock"){
         let msg = "Spock SMASHES Scissors... you lose"
         displayMessage(msg);
@@ -136,6 +143,7 @@ function checkLizard(handTypeComputer){
     }else if (handTypeComputer === "paper"){
         let msg = "Lizard EATS Paper! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "scissors"){
         let msg = "Scissors DECAPITATES Lizard... you lose"
         displayMessage(msg);
@@ -146,6 +154,7 @@ function checkLizard(handTypeComputer){
     }else if (handTypeComputer === "spock"){
         let msg = "Lizard POISONS Spock! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }
 }
 
@@ -156,6 +165,7 @@ function checkSpock(handTypeComputer){
     if (handTypeComputer === "rock"){
         let msg = "Spock VAPORISES Rock! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "paper"){
         let msg = "Paper DISPORVES Spock... you lose"
         displayMessage(msg);
@@ -163,6 +173,7 @@ function checkSpock(handTypeComputer){
     }else if (handTypeComputer === "scissors"){
         let msg = "Spock SMASHES Scissors! You win!"
         displayMessage(msg);
+        incrementGameWonCount();
     }else if (handTypeComputer === "lizard"){
         let msg = "Lizard POISONS Spock... you lose"
         displayMessage(msg);
@@ -181,25 +192,34 @@ function displayMessage(msg){
     document.getElementById("msg").textContent = msg;
 }
 
+
 /**
  * Increase games lost score
  */
 function incrementGamesLostCount(){
-    let score = document.getElementById("game-lost-count").innerText;
-    let newScore = ++score;
-    document.getElementById("game-lost-count").innerText = newScore;
+    let LostScore = document.getElementById("game-lost-count").innerText;
+    let newLostScore = ++LostScore;
+    document.getElementById("game-lost-count").innerText = newLostScore;
 
-    if (newScore === 3){
-        resetScore(newScore);
+    if (newLostScore === 3){
+        resetScores(newLostScore);
     }
 }
 
-/**
- * Resets Score to 0
-*/
-function resetScore(newScore){
-    alert("you're dead");
-    newScore = 0;
-    document.getElementById("game-lost-count").innerText = newScore;
+function incrementGameWonCount(){
+    let wonScore = document.getElementById("game-won-count").innerText;
+    let newWonScore = ++wonScore;
+    document.getElementById("game-won-count").innerText = newWonScore;
+}
 
+
+
+
+/**
+ * Resets INCORRECTScore to 0 
+*/
+function resetScores(newLostScore , newWonScore){
+    alert("you're dead");
+    LostScore = 0;
+    document.getElementById("game-lost-count").innerText = LostScore;
 }
