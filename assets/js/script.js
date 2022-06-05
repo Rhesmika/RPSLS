@@ -3,6 +3,7 @@ console.log("hello");
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
+
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "play-again"){
@@ -15,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         
     }
+
 });
+
 
 let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -176,7 +179,10 @@ function displayMessage(msg){
     document.getElementById("msg").textContent = msg;
 }
 
-function incrementGamesLostCount(){}
+function incrementGamesLostCount(){
+    let oldScore = document.getElementById("game-lost-count").innerText;
+    document.getElementById("game-lost-count").innerText = ++oldScore;
+}
 
 function displayGamesLostCount(){}
 
