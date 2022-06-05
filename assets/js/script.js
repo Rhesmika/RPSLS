@@ -25,24 +25,24 @@ function runGame(handType){
     let random = Math.floor(Math.random()*handTypes.length);
     let handTypeComputer = handTypes[random];
 
-    if (handType === handTypes[0]){
+    if (handType === "rock"){
         checkRock(handTypeComputer);
         console.log("user:", handType);
         console.log("computer:" , handTypeComputer);
-    } else if (handType === handTypes[1]){
-        checkPaper();
+    } else if (handType === "paper"){
+        checkPaper(handTypeComputer);
         console.log("user:", handType);
         console.log("computer:" , handTypeComputer);
-    } else if (handType === handTypes[2]){
-        checkScissors();
+    } else if (handType === "scissors"){
+        checkScissors(handTypeComputer);
         console.log("user:", handType);
         console.log("computer:" , handTypeComputer);
-    } else if (handType === handTypes[3]){
-        checkLizard();
+    } else if (handType === "lizard"){
+        checkLizard(handTypeComputer);
         console.log("user:", handType);
         console.log("computer:" , handTypeComputer);
-    } else if (handType === handTypes[4]){
-        checkSpock();
+    } else if (handType === "spock"){
+        checkSpock(handTypeComputer);
         console.log("user:", handType);
         console.log("computer:" , handTypeComputer);
 }
@@ -77,9 +77,9 @@ function checkRock(handTypeComputer){
 /**
  * Calculates if user wins when they play paper
  */
-function checkPaper(){
+function checkPaper(handTypeComputer){
         if (handTypeComputer === "rock"){
-        let msg = "Paper covers Rock!  You win!"
+        let msg = "Paper COVERS Rock!  You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "paper"){
         let msg = "Both players chose paper...  try again!"
@@ -101,7 +101,7 @@ function checkPaper(){
 /**
  * Calculates if user wins when they play scissors
  */
-function checkScissors(){
+function checkScissors(handTypeComputer){
     if (handTypeComputer === "rock"){
         let msg = "Rock CRUSHES Scissors... you lose"
         displayMessage(msg);
@@ -122,29 +122,31 @@ function checkScissors(){
     }
 }
 
-
-function checkLizard(){
+/**
+ * Calculates if user wins when they play scissors
+ */
+function checkLizard(handTypeComputer){
     if (handTypeComputer === "rock"){
-        let msg = ""
+        let msg = "Rock CRUSHES Lizard... you lose"
         displayMessage(msg);
+        incrementGamesLostCount();
     }else if (handTypeComputer === "paper"){
-        let msg = ""
+        let msg = "Lizard EATS Paper! You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "scissors"){
-        let msg = ""
+        let msg = "Scissors DECAPITATES Lizard... you lose"
         displayMessage(msg);
+        incrementGamesLostCount();
     }else if (handTypeComputer === "lizard"){
-        let msg = ""
+        let msg = "Bother players chose Lizard... try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "spock"){
-        let msg = ""
+        let msg = "Lizard POISONS Spock! You win!"
         displayMessage(msg);
     }
-    incrementGamesLostCount();
-
-
 }
-function checkSpock(){
+
+function checkSpock(handTypeComputer){
     if (handTypeComputer === "rock"){
         let msg = ""
         displayMessage(msg);
@@ -162,7 +164,6 @@ function checkSpock(){
         displayMessage(msg);
     }
     incrementGamesLostCount();
-
 
 }
 
