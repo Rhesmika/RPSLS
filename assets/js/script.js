@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             let handType = this.getAttribute("data-type");
             runGame(handType);
-            handTypeComputer();
             }
         });
         
@@ -22,31 +21,47 @@ let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
 
 
 function runGame(handType){
-    if (handType === handTypes[0]){
-        checkRock();
-    } else if (handType === handTypes[1]){
-        checkPaper();
-    } else if (handType === handTypes[2]){
-        checkScissors();
-    } else if (handType === handTypes[3]){
-        checkLizard();
-    } else if (handType === handTypes[4]){
-        checkSpock();
-}
-}
 
-/**
- * Set hand type for computer randomly
- */
-function handTypeComputer(){
-
-    let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
     let random = Math.floor(Math.random()*handTypes.length);
     let handTypeComputer = handTypes[random];
-    console.log("computer:" , handTypeComputer);
+
+    if (handType === handTypes[0]){
+        checkRock(handTypeComputer);
+        console.log("user:", handType);
+        console.log("computer:" , handTypeComputer);
+    } else if (handType === handTypes[1]){
+        checkPaper();
+        console.log("user:", handType);
+        console.log("computer:" , handTypeComputer);
+    } else if (handType === handTypes[2]){
+        checkScissors();
+        console.log("user:", handType);
+        console.log("computer:" , handTypeComputer);
+    } else if (handType === handTypes[3]){
+        checkLizard();
+        console.log("user:", handType);
+        console.log("computer:" , handTypeComputer);
+    } else if (handType === handTypes[4]){
+        checkSpock();
+        console.log("user:", handType);
+        console.log("computer:" , handTypeComputer);
+}
 }
 
 
+
+function checkRock(handTypeComputer){
+    if (handTypeComputer === "rock"){
+        console.log("the computer chose" , handTypeComputer);
+
+}
+}
+
+
+function checkPaper(){}
+function checkScissors(){}
+function checkLizard(){}
+function checkSpock(){}
 
 
 
