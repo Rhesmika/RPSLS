@@ -51,9 +51,21 @@ function runGame(handType){
 
 
 function checkRock(handTypeComputer){
-    if (handTypeComputer === "rock"){
-        console.log("the computer chose" , handTypeComputer);
+     
 
+    if (handTypeComputer === "rock"){
+        let msg = "Both players chose rock...  try again!"
+        displayMessage(msg);
+    }else if (handTypeComputer === "paper"){
+        alert(`You loose. The computer played ${handTypeComputer}`)
+        incrementGamesLostCount();
+    }else if (handTypeComputer === "scissors"){
+        alert(`You win! The computer played ${handTypeComputer}`)
+    }else if (handTypeComputer === "lizard"){
+        alert(`You win! The computer played ${handTypeComputer}`)
+    }else if (handTypeComputer === "spock"){
+        alert(`You loose. The computer played ${handTypeComputer}`)
+        incrementGamesLostCount();
 }
 }
 
@@ -65,12 +77,9 @@ function checkSpock(){}
 
 
 
-function calculateWinner(){
-    
-
+function displayMessage(msg){
+    document.getElementsByClassName("response-message").textContent = msg;
 }
-
-function displayMessage(){}
 
 function incrementGamesLostCount(){}
 
