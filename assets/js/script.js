@@ -180,12 +180,20 @@ function displayMessage(msg){
 }
 
 function incrementGamesLostCount(){
-    let oldScore = document.getElementById("game-lost-count").innerText;
-    document.getElementById("game-lost-count").innerText = ++oldScore;
+    let score = document.getElementById("game-lost-count").innerText;
+    let newScore = ++score;
+    document.getElementById("game-lost-count").innerText = newScore;
+
+    if (newScore === 3){
+        resetScore(newScore);
+    }
 }
 
 function displayGamesLostCount(){}
 
-function resetScore(){
+function resetScore(newScore){
+    alert("you're dead");
+    newScore = 0;
+    document.getElementById("game-lost-count").innerText = newScore;
 
 }
