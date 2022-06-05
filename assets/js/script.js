@@ -10,27 +10,45 @@ document.addEventListener("DOMContentLoaded", function() {
             runGame();
         } else {
             let handType = this.getAttribute("data-type");
-            alert (`You picked ${handType}`);
-            console.log("user:" , handType);
-        }
-        runGame();
-        })
+            runGame(handType);
+            handTypeComputer();
+            }
+        });
         
     }
-})
+});
 
+let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
+
+
+function runGame(handType){
+    if (handType === handTypes[0]){
+        checkRock();
+    } else if (handType === handTypes[1]){
+        checkPaper();
+    } else if (handType === handTypes[2]){
+        checkScissors();
+    } else if (handType === handTypes[3]){
+        checkLizard();
+    } else if (handType === handTypes[4]){
+        checkSpock();
+}
+}
 
 /**
  * Set hand type for computer randomly
  */
-function runGame(){
+function handTypeComputer(){
 
     let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
     let random = Math.floor(Math.random()*handTypes.length);
     let handTypeComputer = handTypes[random];
     console.log("computer:" , handTypeComputer);
-    calculateWinner();
 }
+
+
+
+
 
 function calculateWinner(){
     
