@@ -14,10 +14,28 @@ document.addEventListener("DOMContentLoaded", function() {
             let handType = this.getAttribute("data-type");
             runGame(handType);
             }
-        });
-        
+        }
+        );
     }
-
+    document.addEventListener("keydown", function(event){
+        if (event.key === "1"){
+            let handType = "rock";
+            runGame(handType);
+        } else if (event.key === "2"){
+                let handType = "paper";
+                runGame(handType);   
+        } else if (event.key === "3"){
+                let handType = "scissors";
+                runGame(handType);   
+        } else if (event.key === "4"){
+                let handType = "lizard";
+                runGame(handType);   
+        } else
+         if (event.key === "5"){
+                let handType = "spock";
+                runGame(handType);   
+        };
+});
 });
 
 
@@ -220,6 +238,8 @@ function incrementGameWonCount(){
 */
 function resetScores(newLostScore , newWonScore){
     alert("you're dead");
-    LostScore = 0;
-    document.getElementById("game-lost-count").innerText = LostScore;
+    lostScore = 0;
+    wonScore = 0;
+    document.getElementById("game-lost-count").innerText = lostScore;
+    document.getElementById("game-won-count").innerText = wonScore;
 }
