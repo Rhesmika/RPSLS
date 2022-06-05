@@ -57,14 +57,14 @@ function checkRock(handTypeComputer){
         let msg = "Both players chose rock...  try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "paper"){
-        alert(`You loose. The computer played ${handTypeComputer}`)
+        alert(`You lose. The computer played ${handTypeComputer}`)
         incrementGamesLostCount();
     }else if (handTypeComputer === "scissors"){
         alert(`You win! The computer played ${handTypeComputer}`)
     }else if (handTypeComputer === "lizard"){
         alert(`You win! The computer played ${handTypeComputer}`)
     }else if (handTypeComputer === "spock"){
-        alert(`You loose. The computer played ${handTypeComputer}`)
+        alert(`You lose. The computer played ${handTypeComputer}`)
         incrementGamesLostCount();
 }
 }
@@ -78,7 +78,7 @@ function checkSpock(){}
 
 
 function displayMessage(msg){
-    document.getElementsByClassName("response-message").textContent = msg;
+    document.getElementById("msg").textContent = msg;
 }
 
 function incrementGamesLostCount(){}

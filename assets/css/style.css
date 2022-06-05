@@ -178,6 +178,12 @@ footer{
     height:200px;
 }
 
+.response-message p {
+    text-align: center;
+}
+
+
+
 #game-outcome{
     width: 70%;
     height:300px;
