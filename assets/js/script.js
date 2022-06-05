@@ -57,14 +57,18 @@ function checkRock(handTypeComputer){
         let msg = "Both players chose rock...  try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "paper"){
-        alert(`You lose. The computer played ${handTypeComputer}`)
+        let msg = "Paper covers Rock..  you loose"
+        displayMessage(msg);
         incrementGamesLostCount();
     }else if (handTypeComputer === "scissors"){
-        alert(`You win! The computer played ${handTypeComputer}`)
+        let msg = "Rock crushes Scissors! You win!"
+        displayMessage(msg);
     }else if (handTypeComputer === "lizard"){
-        alert(`You win! The computer played ${handTypeComputer}`)
+        let msg = "Rock crushes Lizard! You win!"
+        displayMessage(msg);
     }else if (handTypeComputer === "spock"){
-        alert(`You lose. The computer played ${handTypeComputer}`)
+        let msg = "Spock vaporises Rock... you loose"
+        displayMessage(msg);
         incrementGamesLostCount();
 }
 }
