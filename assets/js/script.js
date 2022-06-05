@@ -123,7 +123,7 @@ function checkScissors(handTypeComputer){
 }
 
 /**
- * Calculates if user wins when they play scissors
+ * Calculates if user wins when they play lizard
  */
 function checkLizard(handTypeComputer){
     if (handTypeComputer === "rock"){
@@ -138,7 +138,7 @@ function checkLizard(handTypeComputer){
         displayMessage(msg);
         incrementGamesLostCount();
     }else if (handTypeComputer === "lizard"){
-        let msg = "Bother players chose Lizard... try again!"
+        let msg = "Both players chose Lizard... try again!"
         displayMessage(msg);
     }else if (handTypeComputer === "spock"){
         let msg = "Lizard POISONS Spock! You win!"
@@ -146,25 +146,28 @@ function checkLizard(handTypeComputer){
     }
 }
 
+/**
+ * Calculates if user wins when they play spock
+ */
 function checkSpock(handTypeComputer){
     if (handTypeComputer === "rock"){
-        let msg = ""
+        let msg = "Spock VAPORISES Rock! You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "paper"){
-        let msg = ""
+        let msg = "Paper DISPORVES Spock... you lose"
         displayMessage(msg);
+        incrementGamesLostCount();
     }else if (handTypeComputer === "scissors"){
-        let msg = ""
+        let msg = "Spock SMASHES Scissors! You win!"
         displayMessage(msg);
     }else if (handTypeComputer === "lizard"){
-        let msg = ""
+        let msg = "Lizard POISONS Spock... you lose"
         displayMessage(msg);
+        incrementGamesLostCount();
     }else if (handTypeComputer === "spock"){
-        let msg = ""
+        let msg = "Both players chose Spock.. try again!"
         displayMessage(msg);
     }
-    incrementGamesLostCount();
-
 }
 
 
