@@ -370,7 +370,15 @@ footer{
 .response-message{
     height: 170px;
 }
+
+#game-scores{
+    width: 50%
 }
+#game-outcome-buttons{
+        width: 50%;
+}
+
+
 /* For medium screens size frofm 510 wide and down */
 @media screen and (max-width: 510px) {
     .select{
