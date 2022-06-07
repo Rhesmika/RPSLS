@@ -405,8 +405,7 @@ footer{
 #game-outcome-buttons{
         width: 50%;
 }
-
-
+}
 /* For medium screens size frofm 510 wide and down */
 @media screen and (max-width: 510px) {
     .select{
@@ -421,10 +420,9 @@ footer{
 }
 
 /* For medium screens size from 395 wide and down */
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 395px){
     .select{
         width:90px;
         height:200px;
 }
-
-}
+};
