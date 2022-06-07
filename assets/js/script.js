@@ -1,5 +1,3 @@
-console.log("hello");
-
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
@@ -10,46 +8,56 @@ document.addEventListener("DOMContentLoaded", function() {
             resetScores();
             } else {
             let handType = this.getAttribute("data-type");
-            computerHandType(handType);
-            }
+            pageLevel(handType);
+        }
         }
         );
     }
     document.addEventListener("keydown", function(event){
         if (event.key === "1"){
             let handType = "rock";
-            computerHandType(handType);
+            pageLevel(handType);
         } else if (event.key === "2"){
                 let handType = "paper";
-                computerHandType(handType);
+                pageLevel(handType);
             } else if (event.key === "3"){
                 let handType = "scissors";
-                computerHandType(handType);
+                pageLevel(handType);
             } else if (event.key === "4"){
                 let handType = "lizard";
-                computerHandType(handType);
+                pageLevel(handType);
             } else
          if (event.key === "5"){
                 let handType = "spock";
-                computerHandType(handType);
+                pageLevel(handType);
             };
 });
 });
 
-function pageLevel(){
-
-}
 var handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
+
+function pageLevel(handType){
+    let level = document.getElementById("level").textContent;
+    console.log(level);
+
+    computerHandType(handType , level);
+}
 
 /**
  * 
  * sets the computer handtype
  */
-function computerHandType(handType){
-    
-    let random = Math.floor(Math.random()*handTypes.length);
-    let handTypeComputer = handTypes[random];
-
+function computerHandType(handType , level){
+    if (level === "Level 3"){
+        var levelHands = handTypes.slice(0, 5);
+    } else if (level === "Level 2"){
+        var levelHands = handTypes.slice(0, 4);
+    } else if (level === "Level 1"){
+        var levelHands = handTypes.slice(0, 3);
+    }
+    console.log(levelHands)
+    let random = Math.floor(Math.random()*levelHands.length);
+    let handTypeComputer = levelHands[random];
 
     runGame(handType , handTypeComputer);
 
