@@ -54,13 +54,17 @@ function pageLevel(handType){
 function computerHandType(handType , level){
     if (level === "Level 3"){
         var levelHands = handTypes.slice(0, 5);
+        var random = Math.floor(Math.random()*levelHands.length);
+        var handTypeComputer = levelHands[random];
     } else if (level === "Level 2"){
         var levelHands = handTypes.slice(0, 4);
+        var random = Math.floor(Math.random()*levelHands.length);
+        var handTypeComputer = levelHands[random];
     } else if (level === "Level 1"){
         var levelHands = handTypes.slice(0, 3);
+        var random = Math.floor(Math.random()*levelHands.length);
+        var handTypeComputer = levelHands[random];
     }
-    let random = Math.floor(Math.random()*levelHands.length);
-    let handTypeComputer = levelHands[random];
     runGame(handType , handTypeComputer);
 }
 
