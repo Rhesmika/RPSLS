@@ -11,37 +11,40 @@ body{
     background-color: #FFFFFF;
     color: black;
 }
+
 h1{
     font-size: 40px;
 }
+
 h2{
     font-size: 35px;
     text-align: center;
 }
+
 h3{
     font-size: 25px;
 }
+
 p{
     font-size: 20px;
     color: black;
     text-align: center;
 }
 
-
 header{
     height:80px;
     width:100%;
     color: white;
     text-align: center;
-
 }
+
 header h1{
     display: inline-block;
     vertical-align: middle;
     padding-top: 8px;
     color: black;
-    
 }
+
 #logo{
     height: 50px;
     display: inline-block;
@@ -59,7 +62,6 @@ header h1{
     margin-right: auto;
     overflow: hidden;
     margin-bottom: 80px;
-    
 }
 
 #rules-diagram {
@@ -68,7 +70,6 @@ header h1{
     padding-left: 60px;
     padding-top: 60px;
     float: left;
-
 }
 
 #rules-diagram img{
@@ -107,12 +108,14 @@ button:hover{
     background-color: #e1ae25;
     color: #FFFFFF;
 }
+
 a {
     text-decoration: none;
 }
+
 a, a:visited, a:hover, a:active {
     color: inherit;
-  }
+}
 
 footer{
     height:80px;
@@ -129,13 +132,12 @@ footer{
     padding-top: 30px;
 }
 
-
-
 #pageLevel{
     width: 100%;
     height:60px;
     text-align: center;
 }
+
 .game-area{
     background-color: #ffda67;
     border-radius: 25px;
@@ -159,12 +161,14 @@ footer{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .select{
     height: 300px;
     width:120px;
     display: inline-block;
     vertical-align: top;
 }
+
 .select-button{
     width: auto;
     margin: 0;
@@ -195,10 +199,6 @@ footer{
     margin-right: 20px;
 }
 
-
-
-
-
 #game-outcome{
     width:70%;
     height: 300px;
@@ -218,14 +218,12 @@ footer{
     width: 50%;
 }
 
-
 #game-outcome-buttons{
     width: 40%;
     height: 200px;
     display: flex;
     justify-content: right;
 }
-
 
 .game-outcome-button{
     width: 50%;
@@ -239,11 +237,9 @@ footer{
     margin: 0px;
 }
 
-
 #game-outcome button:hover {
     filter: brightness(70%);
 }
-
 
 .popup{
     background-color: #FFFFFF;
@@ -269,6 +265,7 @@ footer{
     position: relative;
 
 }
+
 .popup button{
     background-color: #e1ae25;
     color: #FFFFFF;
@@ -289,14 +286,13 @@ footer{
 
 /* For larger to medium screens size from 1300px wide and down */
 @media screen and (max-width: 1300px) {
-
 .game-rules-area{
     width: 80%;
 }
 }
+
 /* For larger to medium screens size from 1100px wide and down */
 @media screen and (max-width: 1100px) {
-
     #rules-diagram{
         width: 100%;
         text-align: center;
@@ -314,10 +310,12 @@ footer{
         text-align: center;
         padding: 0;
     }
+
     #rules-table{
         width: 30%;
         margin: auto;
     }
+
     p{
         text-align: center;
     }
@@ -328,8 +326,6 @@ footer{
         padding: 5px;
         margin: 5px;
     }
-
-
 
     #game-buttons{
         padding-top: 10px;
@@ -342,43 +338,45 @@ footer{
         font-size: 30px;
         margin-top: 5px;
     }
+
     h2{
         font-size: 25px;
     }
- .game-buttons{
+    
+    .game-buttons{
      height: auto;
      width:100%;
- }
- .select-button{
+    }
+    
+    .select-button{
      margin-top: 0px;
- }
- .select{
+    }
+    
+    .select{
     width:100px;
     height:200px;
     padding-top: 20px;
- }
- #game-outcome button{
+    }
+
+    #game-outcome button{
      width: 80px;
      font-size: 20px;
-
- }
-
-
+    }
 }
 
 /* For medium screens size from 735 wide and down */
 @media screen and (max-width: 735px) {
+    .game-area{
+        width: 90%;
+    }
 
-.game-area{
-    width: 90%;
-}
-.game-buttons{
-    padding-top: 0px;
-}
-#game-outcome{
-    width:90%;
-}
+    .game-buttons{
+        padding-top: 0px;
+    }
 
+    #game-outcome{
+        width:90%;
+    }
 }
 
 /* For medium screens size from 575 wide and down */
@@ -391,21 +389,20 @@ footer{
         width: 280px;
     }
 
+    .select{
+            width:150px;
+            height:200px;
+    }
 
-
-.select{
-        width:150px;
-        height:200px;
-}
-
-
-#game-scores{
-    width: 50%;
-}
-#game-outcome-buttons{
+    #game-scores{
         width: 50%;
+    }
+
+    #game-outcome-buttons{
+            width: 50%;
+    }
 }
-}
+
 /* For medium screens size frofm 510 wide and down */
 @media screen and (max-width: 510px) {
     .select{
@@ -416,7 +413,6 @@ footer{
 #game-outcome-buttons buttons{
     width: 50%;
 }
-
 }
 
 /* For medium screens size from 395 wide and down */
