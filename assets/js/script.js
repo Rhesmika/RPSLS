@@ -250,9 +250,14 @@ function incrementGameWonCount(){
     let wonScore = document.getElementById("game-won-count").innerText;
     let newWonScore = ++wonScore;
     document.getElementById("game-won-count").innerText = newWonScore;
+    levelUp(newWonScore);
 }
 
-
+function levelUp(newWonScore){
+    if (newWonScore === 3){
+        document.querySelector(".popup").style.display = "block";
+    }
+}
 
 
 /**
