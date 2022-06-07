@@ -243,6 +243,46 @@ footer{
 }
 
 
+.popup{
+    background-color: #FFFFFF;
+    width:50%;
+    height: 200px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 45%;
+    border-radius: 25px;
+}
+#popup-content{
+    padding-top: 40px;
+}
+#popup-message{
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+#popup-response{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+.popup button{
+    background-color: #e1ae25;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: 50%;
+    font-size:20px;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+}
+#
+
+
+
 /* media queries */
 
 /* For larger to medium screens size from 1300px wide and down */
