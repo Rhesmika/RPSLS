@@ -8,11 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "play-again"){
             resetScores();
-            resetWonScore();
-            runGame();
-        } else {
+            } else {
             let handType = this.getAttribute("data-type");
-            runGame(handType);
+            computerHandType(handType);
             }
         }
         );
@@ -20,40 +18,53 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("keydown", function(event){
         if (event.key === "1"){
             let handType = "rock";
-            runGame(handType);
+            computerHandType(handType);
         } else if (event.key === "2"){
                 let handType = "paper";
-                runGame(handType);   
-        } else if (event.key === "3"){
+                computerHandType(handType);
+            } else if (event.key === "3"){
                 let handType = "scissors";
-                runGame(handType);   
-        } else if (event.key === "4"){
+                computerHandType(handType);
+            } else if (event.key === "4"){
                 let handType = "lizard";
-                runGame(handType);   
-        } else
+                computerHandType(handType);
+            } else
          if (event.key === "5"){
                 let handType = "spock";
-                runGame(handType);   
-        };
+                computerHandType(handType);
+            };
 });
 });
+
+function pageLevel(){
+
+}
+var handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
+
+/**
+ * 
+ * sets the computer handtype
+ */
+function computerHandType(handType){
+    
+    let random = Math.floor(Math.random()*handTypes.length);
+    let handTypeComputer = handTypes[random];
+
+
+    runGame(handType , handTypeComputer);
+
+}
+
 
 
 
 /**
  * 
- * set hand type for computer and run game according to user hand type
+ * run game according to user hand type
  */
 
-function runGame(handType){
+function runGame(handType , handTypeComputer){
     
-
-    let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
-    let random = Math.floor(Math.random()*handTypes.length);
-    let handTypeComputer = handTypes[random];
-
-    
-
     if (handType === "rock"){
         checkRock(handTypeComputer);
     } else if (handType === "paper"){
@@ -239,4 +250,5 @@ function resetScores(newLostScore , newWonScore){
     wonScore = 0;
     document.getElementById("game-lost-count").innerText = lostScore;
     document.getElementById("game-won-count").innerText = wonScore;
+    computerHandType()
 }
