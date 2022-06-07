@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Game: RPSLS</title>
+</head>
+
+<body>
+    <header class="heading" >
+        <h1><img id="logo" src="assets/images/FAV.png" alt="logo">Rock, Paper, Scissors, Lizard, Spock</h1>
+    </header>
+
+    <div id="pageLevel"><h3 id="level">Level 2</h3></div>
+
+    <div class="game-area" data-level="level2">
+        <div class="game-buttons">
+            <div class="select" id="rock">
+                <button data-type="rock" class="select-button" id="select-rock"><img src="assets/images/1-hand-rock.png" rel="rock button"></button>
+                <h3>1.Rock</h3>
+            </div>
+            <div class="select" id="paper">
+                <button data-type="paper" class="select-button" id="select-paper"><img src="assets/images/2-hand-paper.png" rel="paper button"></button>
+                <h3>2.Paper</h3>
+            </div>
+            <div class="select" id="scissors">
+                <button data-type="scissors" class="select-button" id="select-scissors"><img src="assets/images/3-hand-scissors.png" rel="sissor button"></button>
+                <h3>3.Scissors</h3>
+            </div>
+            <div class="select" id="lizard">
+                <button data-type="lizard" class="select-button" id="select-lizard"><img src="assets/images/4-hand-lizard.png" rel="lizard button"></button>
+                <h3>4.Lizard</h3>
+            </div>
+        </div>
+        <div class="response-message">
+            <p id="msg"> Choose your move! <em>(click or use the number on your keyboard)!</em></p>
+        </div>
+    </div>
+
+    <section id="game-outcome">
+        <div id="game-scores">
+            <div class="game-score">
+                <h2>Games Won:</h2>
+                <h2 id="game-won-count">0</h2>
+            </div>
+            <div class="game-score">
+                <h2>Games Lost:</h2>
+                <h2 id="game-lost-count">0</h2>
+            </div>
+        </div>
+
+        <div id="game-outcome-buttons">
+            <div class="game-outcome-button" id="see-rules">
+                <button><a href="home.html">Rules</a></button>
+            </div>
+            <div class="game-outcome-button" id="start-again">            
+                <button data-type="play-again" >Restart</button>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <p class="reserves">Rhesmika 2022 All Rights Reserved</p>
+</footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

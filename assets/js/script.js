@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
 
+/**
+ * 
+ * sets page level
+ */
 function pageLevel(handType){
     let level = document.getElementById("level").textContent;
     console.log(level);
@@ -43,9 +47,11 @@ function pageLevel(handType){
     computerHandType(handType , level);
 }
 
+
+
 /**
  * 
- * sets the computer handtype
+ * sets the computer handtype according to level
  */
 function computerHandType(handType , level){
     if (level === "Level 3"){
