@@ -39,35 +39,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
 
+/**
+ * 
+ * set hand type for computer and run game according to user hand type
+ */
 
 function runGame(handType){
+    
 
+    let handTypes = ["rock", "paper", "scissors", "lizard", "spock"];
     let random = Math.floor(Math.random()*handTypes.length);
     let handTypeComputer = handTypes[random];
 
+    
+
     if (handType === "rock"){
         checkRock(handTypeComputer);
-        console.log("user:", handType);
-        console.log("computer:" , handTypeComputer);
     } else if (handType === "paper"){
         checkPaper(handTypeComputer);
-        console.log("user:", handType);
-        console.log("computer:" , handTypeComputer);
     } else if (handType === "scissors"){
         checkScissors(handTypeComputer);
-        console.log("user:", handType);
-        console.log("computer:" , handTypeComputer);
     } else if (handType === "lizard"){
         checkLizard(handTypeComputer);
-        console.log("user:", handType);
-        console.log("computer:" , handTypeComputer);
     } else if (handType === "spock"){
         checkSpock(handTypeComputer);
-        console.log("user:", handType);
-        console.log("computer:" , handTypeComputer);
-}
+    }
 }
 
 
