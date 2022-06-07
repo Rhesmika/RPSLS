@@ -54,26 +54,28 @@
         </div>
     </div>
 
-    <div id="game-outcome">
-        <table id="games-lost">
-            <tr>
-                <td><h2>Games Won</h2></td>
-                <td><h2>Games Lost</h2></td>
-            </tr>
-            <tr>
-                <td><h2 id="game-won-count">0</h2></td>
-                <td><h2 id="game-lost-count">0</h2></td>
-            </tr>
-        </table>
-        <div id="game-outcome-buttons">
-          <button data-type="play-again" id="start-again">Play Again</button>
-          <button id="see-rules"><a href="home.html">See Rules</a></button>
+    <section id="game-outcome">
+        <div id="game-scores">
+            <div class="game-score">
+                <h2>Games Won:</h2>
+                <h2 id="game-won-count">0</h2>
+            </div>
+            <div class="game-score">
+                <h2>Games Lost:</h2>
+                <h2 id="game-lost-count">0</h2>
+            </div>
         </div>
 
+        <div id="game-outcome-buttons">
+            <div class="game-outcome-button" id="start-again">            
+                <button data-type="play-again" >Restart</button>
+            </div>
+            <div class="game-outcome-button" id="see-rules">
+                <button><a href="home.html">Rules</a></button>
+            </div>
+        </div>
+    </section>
 
-
-
-    </div>
 <footer>
     <p class="reserves">Rhesmika 2022 All Rights Reserved</p>
 </footer>

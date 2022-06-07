@@ -193,42 +193,50 @@ footer{
     margin-right: 20px;
 }
 
+
+
+
+
 #game-outcome{
     width:70%;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
 }
 
-#game-outcome button{
-    margin: 5px;
+#game-scores{
+    width:60%;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+}
 
+.game-score{
+    width: 50%;
 }
 
 
-#games-lost{
-    height:75px;
-    margin-left: auto;
-    margin-right: auto;
-    float:left;
-    padding-left: 20px;
+#game-outcome-buttons{
+    width: 40%;
+    height: 200px;
+    display: flex;
+    justify-content: right;
 }
 
-#games-lost h2{
-    text-align: center;
+
+.game-outcome-button{
+    width: 50%;
+    justify-content: right;
+    text-align: right;
 }
 
-#see-rules{
-    background-color: #78a8da;
-    color: #FFFFFF;
-    float:right;
+.game-outcome-button button{
+    background-color: #e1ae25;
+    color:white;
+    margin: 0px;
 }
 
-#start-again{
-    background-color: #78a8da;
-    color: #FFFFFF;
-    float: right;
-}
 
 #game-outcome button:hover {
     filter: brightness(70%);
@@ -311,7 +319,7 @@ footer{
     padding-top: 20px;
  }
  #game-outcome button{
-     width: 100px;
+     width: 80px;
      font-size: 20px;
 
  }
