@@ -140,7 +140,7 @@ footer{
     background-color: #ffda67;
     border-radius: 25px;
     width: 70%;
-    height: 500px;
+    height: auto;
     max-width:1200px;
     margin-left: auto;
     margin-right: auto;
@@ -151,12 +151,13 @@ footer{
 }
 
 .game-buttons{
-    height: 300px;
+    height: auto;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .select{
     height: 300px;
@@ -181,7 +182,8 @@ footer{
 
 .response-message{
     width: 100%;
-    height:200px;
+    height:auto;
+    padding-bottom: 50px;
 }
 
 .response-message p {
@@ -227,7 +229,7 @@ footer{
 
 .game-outcome-button{
     width: 50%;
-    justify-content: right;
+    justify-content: center;
     text-align: center;
 }
 
@@ -344,8 +346,7 @@ footer{
         font-size: 25px;
     }
  .game-buttons{
-     padding-top: 50px;
-     height: 300px;
+     height: auto;
      width:100%;
  }
  .select-button{
@@ -370,7 +371,6 @@ footer{
 
 .game-area{
     width: 90%;
-    height: 500px;
 }
 .game-buttons{
     padding-top: 0px;
@@ -397,15 +397,7 @@ footer{
         width:150px;
         height:200px;
 }
-.game-area{
-    height: 645px;
-}
-.game-buttons{
-    height: 475px;
-}
-.response-message{
-    height: 170px;
-}
+
 
 #game-scores{
     width: 50%
