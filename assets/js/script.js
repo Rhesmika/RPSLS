@@ -242,7 +242,7 @@ function incrementGamesLostCount(){
     document.getElementById("game-lost-count").innerText = newLostScore;
 
     if (newLostScore === 3){
-        resetScores(newLostScore);
+        resetScores();
     }
 }
 
@@ -261,10 +261,9 @@ function levelUp(newWonScore){
 
 
 /**
- * Resets INCORRECTScore to 0 
+ * Resets Incorrect score to 0 
 */
-function resetScores(newLostScore , newWonScore){
-    alert("you're dead");
+function resetScores(){
     lostScore = 0;
     wonScore = 0;
     document.getElementById("game-lost-count").innerText = lostScore;
