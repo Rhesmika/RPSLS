@@ -246,7 +246,6 @@ footer{
 .popup{
     background-color: #FFFFFF;
     width:50%;
-    height: 200px;
     padding: 30px 40px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -255,9 +254,7 @@ footer{
     border-radius: 25px;
     display: none;
 }
-#popup-content{
-    padding-top: 40px;
-}
+
 #popup-message{
     width: 100%;
     margin: 0px;
