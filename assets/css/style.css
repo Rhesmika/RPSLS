@@ -228,7 +228,7 @@ footer{
 .game-outcome-button{
     width: 50%;
     justify-content: right;
-    text-align: right;
+    text-align: center;
 }
 
 .game-outcome-button button{
@@ -321,15 +321,13 @@ footer{
     }
 
     #game-outcome button{
-        width: 150px;
+        width: 120px;
         font-size: 30px;
-        padding: 10px;
+        padding: 5px;
         margin: 5px;
     }
 
-    #game-lost-count{
-        width: 200px;
-    }
+
 
     #game-buttons{
         padding-top: 10px;
@@ -363,9 +361,7 @@ footer{
      font-size: 20px;
 
  }
- #game-lost-count{
-     padding-left: 0px;
-}
+
 
 }
 
@@ -429,9 +425,7 @@ footer{
 #game-outcome-buttons buttons{
     width: 50%;
 }
-#game-lost-count{
-    width:100%;
-}
+
 }
 
 /* For medium screens size from 395 wide and down */
