@@ -60,13 +60,26 @@ The scoring of the game was initally only going to count the games the user lost
 
 
 ## Features
-The game has 3 levels. Each level can be achieved by winning three games against the computer.  If the user loses three games in the level, the lose score restarts to 0. They can then stay on the level until they achieve 3 wins before they achieve 3 loses. 
+The game has 3 levels. Each level can be achieved by winning three games against the computer.  If the user loses three games in the level, the lose score restarts to 0. They can then stay on the level until they achieve 3 wins before they achieve 3 loses. The level the user is on displays at the top of each page. 
+When the user completes a level, a popup appears to let the user know.  The user then has the option to level up or restart the game. 
+
+![popup-level-complete](assets/images/readme/popup.png)
+
 
 As mentioned above, the game tracks the score of the user depending on if they win or loose each round.  3 wins before 3 loses means the user gets to level up.
 
 Each level introduces a new rule.  The game gets harder with each level as theres more chance for attach and there's more to defend.
 
+![level2](assets/images/readme/level2.png)
+![level3](assets/images/readme/level3.png)
+
+
 The user plays the game against the computer. The computer automatically chooses their move based on the level the user is on. If the user only has asccess to rock, paper and scissors - then so does the computer. 
 
 Dependent on what the user and computer play, an outcome message appears at the bottom of the game section. This message shows the user what move beat what move with what method; ie. "Lizard POISONS Spock". This is then followed by a message notifying the user who wins that round. 
 
+### Future Features
+- Allow the user to play against their friends (player 1 and player 2)
+- A leaderboard
+- New Levels with new rules
+-
