@@ -123,3 +123,17 @@ When passed through JSHint, there are warning that appear.  A mojority of these 
   - Once the main branch has been selected, the page was automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here - https://rhesmika.github.io/RPSLS/
+
+
+## Credits
+
+### Icons
+Firts three icons used on the website and used for inspiration for lizard and spock icon: 
+https://www.flaticon.com/free-icon/rock-paper-scissors_4144475
+
+### Popup
+Popup tutorial was found on Youtube:
+https://www.youtube.com/watch?v=sEJB7FtBoug&t=8s
+
+### HTML
+Event listener code at top of Javascript was referenced from the Love Maths website: https://rhesmika.github.io/love-maths/
