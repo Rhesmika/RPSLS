@@ -37,4 +37,24 @@ The rounded corners on the icons, match the font chosen as well as the rounded c
 The website layout was designed in Illustrtor. This enabled me to have a really realistic view of what the website could look like. 
 ![layout-illustrator](assets/images/readme/layout-illustrator.png)
 
+![layout-mobile-illustrator](assets/images/readme/layout-mobile-illustrator.png)
+
+
 As you can see by the markings on the background of the above image, I also used this layout to make out the different sections of the website. This really helped when it came to putting the website together and assigning classes and id's to different sections. 
+
+## Edits
+
+Once the website was actually being created, there were some changes made. 
+
+Game Rules:
+The rules of the game were set out in a tabel format and I decided to center the text instead of aligning it to the left.  This make the rules area flow much better and appeeared as one whole section of the page rather than information which was completely seperate to the diagram. 
+
+Game Mesasge:
+When the user first enters the game page, there isn't any instruction how to make a move against the computer.  I added a simple message below the icons to notify the user they can either click with their mouse on their move of choice, or they can use the corresponding number on their keyboard. Looking back this is definately something that should have been thought out in the designing process. 
+
+Game Outcome Buttons:
+It was decided that yellow, black and white were the main colours of the website. Having the buttons at the bottom of the game in blue felt too foreign to the look of the page. These buttons were chnaged to a darker shade of yellow. 
+
+Scoring: 
+The scoring of the game was initally only going to count the games the user lost. As the website developed, I created a leveling system and determined it to be a more positive experience for the user to see how many more games they needed to win before they could level up. 
+
