@@ -82,4 +82,44 @@ Dependent on what the user and computer play, an outcome message appears at the 
 - Allow the user to play against their friends (player 1 and player 2)
 - A leaderboard
 - New Levels with new rules
--
+- If the user looses 3 games they must return to level 1
+
+
+## Testing
+
+The game and all links/ features have been tested on both mobile and laptop. On laptop, the browser was Chrome, on phone, the browser was Safari.
+
+Media queries created were suitable for each screen size and didn't affect the radio of images etc. On mobile, all hand moves could be seen clearly along with the scores without the need to scroll. 
+
+### Lighthouse
+
+Lighouse reports were generated on all 4 pages of the website. See below the scores:
+![lighthouse-score-index](assets/images/readme/lighthouse-index.png)
+![lighthouse-score-level1](assets/images/readme/lighthouse-level1.png)
+![lighthouse-score-level2](assets/images/readme/lighthouse-level2.png)
+![lighthouse-score-level3](assets/images/readme/lighthouse-level3.png)
+
+
+### Validator Testing
+
+HTML:
+When passed through W3C Validator, only minor erros were highlighted. Simple issues such as spacing and punctuation were amended. 
+The report now returns no errors 
+![html-w3c](assets/images/readme/html-w3c.png)
+
+CSS: 
+When passed through jigsaw, no errors were found. 
+![css-jigsaw](assets/images/readme/css-jigsaw.png)
+
+JavaScript:
+When passed through JSHint, there are warning that appear.  A mojority of these are the same warning realting to the following : "let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)". 
+![js-hint](assets/images/readme/js-jshint.png)
+
+### Deployment
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - Navigate to the pages section on the left hand side
+  - See the drop-down menu, select the Main Branch
+  - Once the main branch has been selected, the page was automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://rhesmika.github.io/RPSLS/
